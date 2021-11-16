@@ -3,10 +3,10 @@
         <div class="menu-item"><a href="#"></a><span>ANACONDA.</span></div>
         <dropdown title="Products" :items="products"/>
         <div class="menu-item"><a href="#">Pricing</a></div>
-        <div class="menu-item"><a href="#">Solutions</a></div>
-        <div class="menu-item"><a href="#">Resources</a></div>
+        <dropdown title="Solutions" :items="products"/>
+        <dropdown title="Resources" :items="products"/>
         <div class="menu-item"><a href="#">Blog</a></div>
-        <div class="menu-item"><a href="#">Company</a></div>
+        <dropdown title="Company" :items="products"/>
         <div class="menu-item"><a href="#">Get Started</a></div>
     </nav>
 </template>
@@ -62,6 +62,6 @@ nav .menu-item{
     border-bottom: 2px solid transparent;
 }
 nav .menu-item:hover{
-    border-bottom-color: blue;
+    border-bottom-color: #43b049;
 }
 </style>

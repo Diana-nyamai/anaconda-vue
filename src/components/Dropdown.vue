@@ -1,7 +1,7 @@
 <template>
     <div class="menu-item">
         <a href="#">{{title}}</a>
-        <fa icon="caret-down"/>
+        <fa icon="caret-down" :style="{ marginLeft: '5px',color: 'grey' }"/>
         </div>
 </template>
 
