@@ -1,7 +1,7 @@
 <template>
     <nav>
         <div class="menu-item"><a href="#"></a><span>ANACONDA.</span></div>
-        <div class="menu-item"><a href="#">Products</a></div>
+        <dropdown title="Products" :items="products"/>
         <div class="menu-item"><a href="#">Pricing</a></div>
         <div class="menu-item"><a href="#">Solutions</a></div>
         <div class="menu-item"><a href="#">Resources</a></div>
@@ -12,8 +12,13 @@
 </template>
 
 <script>
+import Dropdown from './Dropdown.vue'
     export default {
         name: 'navbar',
+        components:{
+            Dropdown
+
+        },
         data (){
             return{
                 products: [
