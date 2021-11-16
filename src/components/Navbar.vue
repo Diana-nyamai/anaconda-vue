@@ -1,9 +1,9 @@
 <template>
     <nav>
-        <div class="menu-item"><a href="#"></a><span>ANACONDA.</span></div>
+        <div class="menu-item"><a href="#"><img :src="logo" width="40" height="40" alt="logo"></a><span>ANACONDA.</span></div>
         <dropdown title="Products" :items="products"/>
         <div class="menu-item"><a href="#">Pricing</a></div>
-        <dropdown title="Solutions" :items="products"/>
+        <dropdown title="Solutions" :items="solutions"/>
         <dropdown title="Resources" :items="products"/>
         <div class="menu-item"><a href="#">Blog</a></div>
         <dropdown title="Company" :items="products"/>
@@ -21,24 +21,49 @@ import Dropdown from './Dropdown.vue'
         },
         data (){
             return{
+                logo: require('../assets/favicon.png'),
                 products: [
                     {
-                        title: 'Individual edition'
+                        title: 'Individual edition',
+                        link: 'hhhhhh'
                     },
                     {
-                        title: 'Team edition'
+                        title: 'Team edition',
+                        link: 'hhhhhh'
                     },
                     {
-                        title: 'Enterprise edition'
+                        title: 'Enterprise edition',
+                        link: 'hhhhhh'
                     },
                     {
-                        title: 'Commercial edition'
+                        title: 'Commercial edition',
+                        link: 'hhhhhh'
                     },
                     {
-                        title: 'Anaconda Embedded'
+                        title: 'Anaconda Embedded',
+                        link: 'hhhhhh'
                     },
                     {
-                        title: 'professional Services'
+                        title: 'professional Services',
+                        link: 'hhhhhh'
+                    },
+                ],
+                solutions: [
+                    {
+                        title: 'diana',
+                        link: 'hhhh'
+                    },
+                    {
+                        title: 'diana',
+                        link: 'hhhh'
+                    },
+                    {
+                        title: 'diana',
+                        link: 'hhhh'
+                    },
+                    {
+                        title: 'diana',
+                        link: 'hhhh'
                     },
                 ]
             }
