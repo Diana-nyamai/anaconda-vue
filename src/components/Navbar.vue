@@ -2,12 +2,12 @@
     <nav>
         <div class="menu-item"><a href="#"><img :src="logo" width="40" height="40" alt="logo"></a><span>ANACONDA.</span></div>
         <dropdown title="Products" :items="products"/>
-        <div class="menu-item"><a href="#">Pricing</a></div>
+        <div class="menu-item green"><a href="#">Pricing</a></div>
         <dropdown title="Solutions" :items="solutions"/>
         <dropdown title="Resources" :items="products"/>
-        <div class="menu-item"><a href="#">Blog</a></div>
+        <div class="menu-item green"><a href="#">Blog</a></div>
         <dropdown title="Company" :items="products"/>
-        <div class="menu-item"><a href="#">Get Started</a></div>
+        <div class="menu-item"><a href="#" class="g-started">Get Started</a></div>
     </nav>
 </template>
 
@@ -21,7 +21,7 @@ import Dropdown from './Dropdown.vue'
         },
         data (){
             return{
-                logo: require('../assets/favicon.png'),
+                logo: require('../assets/favicon.png'),   
                 products: [
                     {
                         title: 'Individual edition',
@@ -89,4 +89,19 @@ nav .menu-item{
 nav .menu-item:hover{
     border-bottom-color: #43b049;
 }
+nav .menu-item .g-started{
+    padding: 0.4em 1.5em;
+    border: 2px solid #0b2227;
+    background: #0b2227;
+    border-radius: 25em;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+    transition: all .2s;
+    color: #fff;
+}
+nav .menu-item .g-started:hover{
+    background: #005a87;
+    border: 2px solid #005a87;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 50%);
+}
+
 </style>
