@@ -97,6 +97,7 @@ nav .menu-item .g-started{
     box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
     transition: all .2s;
     color: #fff;
+    margin-left: 50px auto;
 }
 nav .menu-item .g-started:hover{
     background: #005a87;

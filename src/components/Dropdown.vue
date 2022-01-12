@@ -1,4 +1,4 @@
-<template>
+ <template>
     <div class="menu-item" @mouseover="isOpen = !isOpen">
         <a href="#">{{title}}</a>
         <fa icon="caret-down" :style="{ marginLeft: '5px',color: 'grey' }"/>
