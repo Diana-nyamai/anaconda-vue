@@ -166,6 +166,9 @@ a{
 .right-text{
   font-size: 18px;
 }
+.right-text p{
+  color: #556575;
+}
  .right{
    background-image: url(./assets/icon-bend.svg);
    width: 100%;
@@ -198,11 +201,16 @@ a{
    padding-right:10px;
  }
  .bottom-container{
+   display: flex;
+   justify-content: flex-end;
+   width: 50%;
    
+   border: 1px solid black;
  }
  .bottom-content{
    border: 1px solid black;
-   width: 20% ;
-   margin:0 100px;
+   width: 60%;
+   font-size: 20px;
+   color: #556575;
  }
 </style>
