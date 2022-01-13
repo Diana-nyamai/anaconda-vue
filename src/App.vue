@@ -15,6 +15,7 @@
       </div></div>
     <div class="services-container">
           <div class="left-container">
+           
             <div class="left-content">
             <div class="icon">icon</div>
             <div class="text">
@@ -151,16 +152,16 @@ a{
 
 /* services */
 .services-container{
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 .left-container,
 .right-container{
-  border: 1px solid black;
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -170,9 +171,30 @@ a{
 }
 .left-content{
   display: flex;
+  width: 50%;
   padding-bottom: 150px;
 }
+.right-container{
+  background-image: url('./assets/icon-bend.svg');
+  background-repeat: no-repeat;
+  
+}
+@media all and (max-width: 768px){
+  .left-container,
+.right-container{
+  width: 100%;
+}
+.left-content{
+  width: 100%;
 
+
+
+  
+}
+}
+.right-container{
+  background-image: none;
+}
 
 
 </style>
