@@ -13,7 +13,55 @@
         <h1 class="green">Powerful solving.</h1>
         <p>Anaconda was built by data scientists, for data scientists. More than 20 million people use our technology to solve the toughest problems.</p>
       </div></div>
+    <div class="services-container">
+          <div class="left-container">
+            <div class="left-content">
+            <div class="icon">icon</div>
+            <div class="text">
+              <h3>Tackle any challenge</h3>
+              <p>Anaconda solutions are serious technology for real data science and ML applications. Anaconda is versatile - you'll be ready to solve problems you don't even know you have yet.</p>
+            </div>
+          </div>
+          <div class="left-content">
+            <div class="icon">icon</div>
+            <div class="text">
+              <h3>Tackle any challenge</h3>
+              <p>Anaconda solutions are serious technology for real data science and ML applications. Anaconda is versatile - you'll be ready to solve problems you don't even know you have yet.</p>
+            </div>
+          </div>
+          <div class="left-content">
+            <div class="icon">icon</div>
+            <div class="text">
+              <h3>Tackle any challenge</h3>
+              <p>Anaconda solutions are serious technology for real data science and ML applications. Anaconda is versatile - you'll be ready to solve problems you don't even know you have yet.</p>
+            </div>
+          </div>
+          </div>
 
+          <div class="right-container">
+            <div class="right-content">
+              <div class="header1"><h3>Why it matters</h3></div>
+              <ul>
+                <li>
+                  <i>icon</i>
+                  <p>Deliver on your data strategy</p>
+                </li>
+                 <li>
+                  <i>icon</i>
+                  <p>Deliver on your data strategy</p>
+                </li>
+                 <li>
+                  <i>icon</i>
+                  <p>Deliver on your data strategy</p>
+                </li>
+                 <li>
+                  <i>icon</i>
+                  <p>Deliver on your data strategy</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </div>
     </div><!-- second section -->
   </div><!-- enclosing the entire page -->
 </template>
@@ -99,6 +147,30 @@ a{
   .title p {
     width: 100%;
   }
+}
+
+/* services */
+.services-container{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+.left-container,
+.right-container{
+  border: 1px solid black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  flex-wrap: wrap;
+}
+.left-content{
+  display: flex;
+  padding-bottom: 150px;
 }
 
 
