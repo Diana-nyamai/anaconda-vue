@@ -106,7 +106,7 @@ a{
 
 /* second section */
 .second-section{
-  height: auto;
+  height: 200vh;
   padding: 10px;
   width: 100%;
   background: #dcf0ef;
