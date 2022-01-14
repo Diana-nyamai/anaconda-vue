@@ -15,7 +15,7 @@
       </div></div>
     <div class="services-container">
           <div class="left-container">
-           
+           <div class="left-inner">
             <div class="left-content">
             <div class="icon">icon</div>
             <div class="text">
@@ -37,9 +37,10 @@
               <p>Anaconda solutions are serious technology for real data science and ML applications. Anaconda is versatile - you'll be ready to solve problems you don't even know you have yet.</p>
             </div>
           </div>
-          </div>
+          </div></div>
 
           <div class="right-container">
+            <div class="right-inner">
             <div class="right-content">
               <div class="header1"><h3>Why it matters</h3></div>
               <ul>
@@ -60,7 +61,7 @@
                   <p>Deliver on your data strategy</p>
                 </li>
               </ul>
-            </div>
+            </div></div>
           </div>
     </div>
     </div><!-- second section -->
@@ -155,45 +156,91 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   flex-wrap: wrap;
-  overflow: hidden;
 }
-.left-container,
-.right-container{
+.right-container,
+.left-container{
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 50%;
   flex-wrap: wrap;
+  overflow: hidden;
+}
+.left-inner{
+  width: 70%;
+  position: absolute;
+  right: 40px;
 }
 .left-content{
   display: flex;
+  padding-bottom: 150px ;
+  justify-content: flex-end;
+}
+.icon{
+  padding-right: 20px; 
+}
+.text{
   width: 50%;
-  padding-bottom: 150px;
 }
-.right-container{
-  background-image: url('./assets/icon-bend.svg');
-  background-repeat: no-repeat;
-  
+
+
+.right-inner{
+
+    background: url('./assets/icon-bend.svg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
+.right-content{
+  padding: 50px;
+  position: absolute;
+  left: 150px;
+  background: #fff;
+  width: 400px;
+}
+.right-content ul li{
+  display: flex;
+  line-height: 400%;
+}
+.right-content ul li i{
+  padding-right: 10px;
+}
+
+
 @media all and (max-width: 768px){
-  .left-container,
+.left-container,
 .right-container{
   width: 100%;
+}
+.left-inner{
+  width: 100%;
+  right: 0;
 }
 .left-content{
   width: 100%;
-
-
-
-  
+  padding-bottom: 50px ;
+  justify-content: center;
 }
+.text{
+  width: 100%;
 }
-.right-container{
-  background-image: none;
+
+.right-inner{
+  background: none;
+}
+.right-content{
+  left: 0;
+  justify-content: center;
+}
 }
 
 
