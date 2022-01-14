@@ -5,7 +5,7 @@
     </header>
 
     <!-- body -->
-    <div class="second-section">
+    <section class="second-section">
       <div class="title-container">
       <div class="title">
         <h1>Not just</h1>
@@ -15,29 +15,30 @@
       </div></div>
     <div class="services-container">
           <div class="left-container">
-           <div class="left-inner">
-            <div class="left-content">
-            <div class="icon">icon</div>
-            <div class="text">
-              <h3>Tackle any challenge</h3>
-              <p>Anaconda solutions are serious technology for real data science and ML applications. Anaconda is versatile - you'll be ready to solve problems you don't even know you have yet.</p>
-            </div>
-          </div>
-          <div class="left-content">
-            <div class="icon">icon</div>
-            <div class="text">
-              <h3>Tackle any challenge</h3>
-              <p>Anaconda solutions are serious technology for real data science and ML applications. Anaconda is versatile - you'll be ready to solve problems you don't even know you have yet.</p>
-            </div>
-          </div>
-          <div class="left-content">
-            <div class="icon">icon</div>
-            <div class="text">
-              <h3>Tackle any challenge</h3>
-              <p>Anaconda solutions are serious technology for real data science and ML applications. Anaconda is versatile - you'll be ready to solve problems you don't even know you have yet.</p>
-            </div>
-          </div>
-          </div></div>
+            <ul>
+              <li>
+                <span>icon</span>
+                <div class="text">
+                  <h3>Tackle any challenge</h3>
+                  <p>Anaconda solutions are serious technology for real data science and ML applications. Anaconda is versatile - you'll be ready to solve problems you don't even know you have yet.</p>
+                </div>
+              </li>
+              <li>
+                <span>icon</span>
+                <div class="text">
+                  <h3>Tackle any challenge</h3>
+                  <p>Anaconda solutions are serious technology for real data science and ML applications. Anaconda is versatile - you'll be ready to solve problems you don't even know you have yet.</p>
+                </div>
+              </li>
+              <li>
+                <span>icon</span>
+                <div class="text">
+                  <h3>Tackle any challenge</h3>
+                  <p>Anaconda solutions are serious technology for real data science and ML applications. Anaconda is versatile - you'll be ready to solve problems you don't even know you have yet.</p>
+                </div>
+              </li>
+            </ul>
+           </div>
 
           <div class="right-container">
             <div class="right-inner">
@@ -64,7 +65,8 @@
             </div></div>
           </div>
     </div>
-    </div><!-- second section -->
+    </section><!-- second section -->
+
   </div><!-- enclosing the entire page -->
 </template>
 
@@ -172,12 +174,13 @@ a{
   overflow: hidden;
 }
 .left-inner{
-  width: 70%;
-  position: absolute;
+  width: 100%;
+  position: relative;
   right: 40px;
 }
 .left-content{
   display: flex;
+  position: relative;
   padding-bottom: 150px ;
   justify-content: flex-end;
 }
@@ -215,7 +218,9 @@ a{
   padding-right: 10px;
 }
 
+@media all and (max-width: 1500px){
 
+}
 @media all and (max-width: 768px){
 .left-container,
 .right-container{
